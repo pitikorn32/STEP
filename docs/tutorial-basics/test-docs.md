@@ -1,0 +1,48 @@
+---
+sidebar_position: 7
+title: 87-S1-Q4
+authors: pitikorn32
+tags:
+  - Series Analysis
+  - sum of infinite series
+  - logarithm
+  - exponential function
+---
+
+Show that the sum of the infinite series
+
+$$
+\log_{2}\mathrm{e}-\log_{4}\mathrm{e}+\log_{16}\mathrm{e}-\ldots+(-1)^{n}\log_{2^{2^{n}}}\mathrm{e}+\ldots
+$$
+is
+$$
+\frac{1}{\ln(2\sqrt{2})}
+$$
+
+[ $\log_{a}b=c$ is equivalent to $a^{c}=b$ ]
+
+STEP I 1987 Question 4 (Pure)
+
+<details><summary><b>Solution</b></summary>  
+
+$$
+\log_{2}\mathrm{e}-\log_{4}\mathrm{e}+\log_{16}\mathrm{e}-\ldots+(-1)^{n}\log_{2^{2^{n}}}\mathrm{e}+\ldots = \sum_{k=1}^{\infty} (-1)^{k}\log_{2^{2^{k}}}\mathrm{e}
+$$
+
+$$
+= \sum_{k=1}^{\infty} \frac{(-1)^{k}}{{2^{k}}\ln{2}}
+$$
+
+$$
+= \frac{1}{\ln{2}}\sum_{k=1}^{\infty} \frac{(-1)^{k}}{2^{k}} = \frac{1}{\ln{2}}\sum_{k=1}^{\infty} {(-\frac{1}{2})}^{k}
+$$
+
+$$
+= \frac{1}{\ln{2}} \cdot \frac{1}{1 - (-\cfrac{1}{2})} = \frac{1}{\cfrac{3}{2} \cdot \ln{2}}
+$$
+
+$$
+= \frac{1}{\ln(2\sqrt{2})}
+$$
+
+</details>
